@@ -1,55 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+   
+<!-- RWD -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<!-- iOS Specific -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="">
+<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#6F6F6F">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+
+<!-- Other Mobile Platforms -->
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="theme-color" content="#ffffff">
+
+<!-- Favicons -->
+<link rel="shortcut icon" href="img/favicons/sitting-cat.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/sitting-cat.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/sitting-cat.png">  
+
+
+
+<!-- Manifest JSON  -->
+<link rel="manifest" href="manifest.json">
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="css/bulma-carousel.min.css"> 
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- Font -->
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet" rel="stylesheet">
+
+<!-- Title -->
+<title>What to Wear Weather</title>
+
+
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/bulma-carousel.min.css"> 
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Title -->
+  <title>What to Wear Weather</title>
+
 </head>
 <body>
-    <h1>wuts wet?</h1>
 
-<div id="primary">
-    <ul>
-        <li class="image">
-            <img src="" alt="">
-        </li>
-        <li class="city">City</li>
-        <li class="temp">Temp</li>
-        <li class="time">Time</li>
-      </ul>
-</div>
+  
 
-<div id="secondary">
-    <ul>
-        <li class="image">
-            <img src="" alt="">
-        </li>
-        <li class="city">City</li>
-        <li class="temp">Temp</li>
-        <li class="time">Time</li>
-      </ul>
-</div>
+  <div class='carousel carousel-animated carousel-animate-slide'>
+    <div class='carousel-container'>
 
-<div id="geolocation">
-    <ul>
-        <li class="image">
-            <img src="" alt="">
-        </li>
-        <li class="city">City</li>
-        <li class="temp">Temp</li>
-        <li class="time">Time</li>
-      </ul>
-      <button>Get Location</button>
-</div>
-    <!--jQuery library from codepen-->
-    <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js></script>
-    
-    <!--weather plugin-->
-    <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js></script>
+      <!-- Geolocation -->
+      <div id="geolocation" class='carousel-item'>
+        
+          <ul>
+            <li class="city">City</li>
+            <li class="temp">Temp</li>
+            <li class="currently">Currently</li>
+            <!--Icons from FlatIcons-->
+            <li class="image">
+                <img src="">
+            </li>
+            <li class="high">High</li>
+            <li class="low">Low</li>
+          </ul>
+           
+      </div>
+      
+      <!-- Primary -->
+      <div  id="primary" class='carousel-item is-active'>
+        
+        <ul>
+            <li class="city">City</li>
+            <li class="temp">Temp</li>
+            <li class="currently">Currently</li>
+            <!--Icons from FlatIcons-->
+            <li class="image">
+                <img src="">
+            </li>
+            <li class="high">High</li>
+            <li class="low">Low</li>
+          </ul>
 
-    <!--our scripts-->
-    <script src="js/scripts.js"></script>    
+      </div><!-- end .primary -->
+
+      <!-- Secondary  -->
+      <div id="secondary" class='carousel-item'>
+        
+        <ul>
+            <li class="city">City</li>
+            <li class="temp">Temp</li>
+            <li class="currently">Currently</li>
+            <!--Icons from FlatIcons-->
+            <li class="image">
+                <img src="">
+            </li>
+            <li class="high">High</li>
+            <li class="low">Low</li>
+          </ul>
+      
+      </div><!-- end .secondary -->
+  
+    </div><!-- end .carousel-container -->
+  </div><!-- end .carousel -->
+
+
+<!-- jQuery Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Weather Plugin -->
+<script src="js/weather-plugin.js"></script>
+<!-- Bulma Plugin -->
+<script src="js/bulma-carousel.min.js"></script>
+<!-- Our Scripts -->
+<script src="js/scripts.js"></script> 
 
 </body>
 </html>

@@ -1,0 +1,54 @@
+/* Carousel */
+html {
+    background: #ffb6c1;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    color: #ffffff;
+}
+
+.high, .low {
+    display: inline-block;
+    padding-top: 5%;
+}
+
+.temp {
+    font-size: 14em;
+}
+
+.currently, .high, .low {
+    font-size: 4em;
+}
+
+.currently {
+    padding-bottom: 5%;
+}
+
+.city {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1em;
+}
+
+.meh {
+    background-image: url(/img/meh.png);
+    background-size: cover;
+}
+
+.happy {
+    background-image: url(/img/happy.png);
+    background-size: cover;
+}
+
+.sad {
+    background-image: url(/img/sad.png);
+    background-size: cover;
+}
+
+img {
+    padding: 40%;
+}
